@@ -2,7 +2,7 @@
   "name": "portfolio_site",
   "description": "My portfolio page",
   "version": "1.0.0",
-  "author": "Kenshiro FUJII <kenshiro-fujii@cookpad.com>",
+  "author": "Kenshiro FUJII <tmu.kenshiro@cookpad.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-router": "^3.0.1"
   },
   "browserslist": [
     "> 1%",

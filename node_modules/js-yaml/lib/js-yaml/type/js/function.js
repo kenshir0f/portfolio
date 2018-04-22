@@ -30,8 +30,7 @@ function resolveJavascriptFunction(data) {
     if (ast.type                    !== 'Program'             ||
         ast.body.length             !== 1                     ||
         ast.body[0].type            !== 'ExpressionStatement' ||
-        (ast.body[0].expression.type !== 'ArrowFunctionExpression' &&
-          ast.body[0].expression.type !== 'FunctionExpression')) {
+        ast.body[0].expression.type !== 'FunctionExpression') {
       return false;
     }
 
@@ -52,8 +51,7 @@ function constructJavascriptFunction(data) {
   if (ast.type                    !== 'Program'             ||
       ast.body.length             !== 1                     ||
       ast.body[0].type            !== 'ExpressionStatement' ||
-      (ast.body[0].expression.type !== 'ArrowFunctionExpression' &&
-        ast.body[0].expression.type !== 'FunctionExpression')) {
+      ast.body[0].expression.type !== 'FunctionExpression') {
     throw new Error('Failed to resolve function');
   }
 

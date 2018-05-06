@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from './style.css';
+// import * as styles from './style.css';
 
 export const IconPresenter = ({
   iconName,
@@ -8,7 +8,7 @@ export const IconPresenter = ({
   ...props,
 }) => (
   <img 
-    src={`/${ iconName }.svg`}
+    src={`/static/${ iconName }.svg`}
     alt=""
     height={ height }
     width={ width }
@@ -22,7 +22,7 @@ export const IconContainer = ({
   onClick,
   ...props,
 }) => {
-  if (onClick) className += ` ${ styles.clickable }`;
+  // if (onClick) className += ` ${ styles.clickable }`;
   return presenter({ onClick, className, ...props })
 }
 

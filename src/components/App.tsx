@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Header from './Header';
+import Header from './Molecules/Header/Header';
 
 const App = ({ children }) =>
   <main>

@@ -3,7 +3,7 @@
 
 # Cloud Functions
 # node_modules
-build
+dist
 node_modules
 functions/.runtimeconfig.json
 firebase-debug.log

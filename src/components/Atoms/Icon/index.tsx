@@ -8,7 +8,7 @@ export const IconPresenter = ({
   ...props,
 }) => (
   <img 
-    src={`/icons/${ iconName }.svg`}
+    src={`/${ iconName }.svg`}
     alt=""
     height={ height }
     width={ width }

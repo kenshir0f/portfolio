@@ -10,6 +10,6 @@ export default ({ pathname }: { pathname?: string}) =>
       <a className={pathname === '/' && 'is-active' || ''}>Home</a>
     </Link>{' '}
     <Link href="/about">
-      <a className={pathname === '/about' && 'is-active' || ''}>About</a>
+      <a className={pathname === '/about' ? 'is-active' : ''}>About</a>
     </Link>
   </header>;

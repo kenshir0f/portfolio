@@ -11,7 +11,8 @@
     "serve": "firebase serve",
     "deploy": "firebase deploy",
     "dev": "concurrently 'yarn watch-static' 'tsc --watch' 'next ./dist'",
-    "build": "yarn clean && tsc && next build ./dist && cp package.json dist/package.json && yarn create-public",
+    "build": "yarn clean && tsc && cp src/components/Atoms/Icon/style.css dist/components/Atoms/Icon && next build ./dist && cp package.json dist/package.json && yarn create-public",
+    "__build": "yarn clean && tsc && cp src/components/Atoms/Icon/style.css dist/components/Atoms/Icon && cp src/pages/style.css dist/pages && next build ./dist",
     "start": "next start ./dist",
     "clean": "rm -rf dist/ && yarn install",
     "reset": "rm -rf node_modules dist && yarn",
@@ -19,10 +20,11 @@
     "create-public": "mkdir dist/public/static && cp src/static/* dist/public/static && echo \"not used\" > dist/public/__placeholder.html"
   },
   "dependencies": {
+    "@zeit/next-css": "^0.2.0",
     "babel-runtime": "^6.26.0",
     "firebase-admin": "^5.0.1",
     "firebase-functions": "^0.7.3",
-    "next": "4.2.3",
+    "next": "5.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "watch-run": "^1.2.5"

@@ -3,14 +3,20 @@
     "compilerOptions": {        
         "moduleResolution": "node",
         "jsx": "react",
-        "target": "es2015",
+        "target": "es6",
         "lib": ["dom", "es7", "es2017"],
-        "module": "es6",        
+        "module": "commonJS",        
         "noImplicitAny": false,
         "sourceMap": true,
         "outDir": "dist",
-        "experimentalDecorators": true
+        "strictNullChecks": true,
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "allowJs": true
     },
+    "include": [
+        "src"
+    ],
     "exclude": [
 		"node_modules", "functions"
 	]

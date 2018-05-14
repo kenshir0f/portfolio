@@ -1,7 +1,8 @@
 import { configure } from '@storybook/react';
+import { configureViewport } from '@storybook/addon-viewport';
 
-// automatically import all files ending in *.stories.ts
-const req = require.context('../stories', true, /.stories.ts$/);
+// automatically import all files ending in *.stories.tsx
+const req = require.context('../src/components', true, /.stories.js$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }

@@ -21,7 +21,7 @@ export const HeaderPresenter = (
   </header>
 );
 
-interface test3 {
+interface he_co {
   presenter: any,
   className: string,
   props: any
@@ -31,7 +31,7 @@ export const HeaderContainer = ({
   presenter,
   className = '',
   ...props
-}: test3) => (
+}: he_co) => (
   presenter({
     className, ...props
   })

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import * as styles from './style.css';
 
-interface test {
+interface ic_pr {
   iconName: string,
   height: number,
   width: number,
   props: any
 }
 
-interface test2 {
+interface ic_co {
   presenter: any,
   className: string,
   onClick: any,
@@ -20,7 +20,7 @@ export const IconPresenter = ({
   height = 20,
   width = 20,
   ...props,
-}: test) => (
+}: ic_pr) => (
   <img 
     src={`/static/${ iconName }.svg`}
     alt=""
@@ -35,7 +35,7 @@ export const IconContainer = ({
   className = '',
   onClick,
   ...props,
-}: test2) => {
+}: ic_co) => {
   className += ` ${ styles.example }`;
   return presenter({ onClick, className, ...props })
 }

@@ -16,7 +16,9 @@
     "clean": "rm -rf dist/ && yarn install",
     "reset": "rm -rf node_modules dist && yarn",
     "watch-static": "watch-run -i -p 'src/static/**' 'rm -rf dist/static && mkdir dist/static && cp src/static/* dist/static'",
-    "create-public": "mkdir dist/public/static && cp src/static/* dist/public/static && echo \"not used\" > dist/public/__placeholder.html"
+    "create-public": "mkdir dist/public/static && cp src/static/* dist/public/static && echo \"not used\" > dist/public/__placeholder.html",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@types/next": "^2.4.9",
@@ -34,7 +36,12 @@
     "sinon": "^4.5.0",
     "tslint": "^5.7.0",
     "typescript": "^2.8.3",
-    "watch-run": "^1.2.5"
+    "watch-run": "^1.2.5",
+    "@storybook/react": "^3.4.4",
+    "@storybook/addon-actions": "^3.4.4",
+    "@storybook/addon-links": "^3.4.4",
+    "@storybook/addons": "^3.4.4",
+    "babel-core": "^6.26.3"
   },
   "dependencies": {
     "@google-cloud/storage": "1.6.0",

@@ -5,7 +5,7 @@
         "jsx": "react",
         "target": "es6",
         "lib": ["dom", "es7", "es2017"],
-        "module": "commonJS",        
+        "module": "commonjs",        
         "noImplicitAny": false,
         "sourceMap": true,
         "outDir": "dist",
@@ -18,6 +18,6 @@
         "src"
     ],
     "exclude": [
-		"node_modules", "functions"
+		"node_modules"
 	]
 }

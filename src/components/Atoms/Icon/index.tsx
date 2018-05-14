@@ -16,7 +16,7 @@ interface test2 {
 }
 
 export const IconPresenter = ({
-  iconName = 'header-menu',
+  iconName,
   height = 20,
   width = 20,
   ...props,

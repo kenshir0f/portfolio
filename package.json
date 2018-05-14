@@ -12,7 +12,7 @@
     "deploy": "firebase deploy",
     "dev": "concurrently 'yarn watch-static' 'tsc --watch' 'next ./dist'",
     "build": "yarn clean && tsc && cp src/components/Atoms/Icon/style.css dist/components/Atoms/Icon && next build ./dist && cp package.json dist/package.json && yarn create-public",
-    "__build": "yarn clean && tsc && cp src/components/Atoms/Icon/style.css dist/components/Atoms/Icon && cp src/pages/style.css dist/pages && next build ./dist",
+    "__build": "yarn clean && tsc && cp src/components/Atoms/Icon/style.css dist/components/Atoms/Icon && next build ./dist",
     "start": "next start ./dist",
     "clean": "rm -rf dist/ && yarn install",
     "reset": "rm -rf node_modules dist && yarn",

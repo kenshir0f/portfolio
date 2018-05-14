@@ -6,7 +6,7 @@
         "target": "es6",
         "lib": ["dom", "es7", "es2017"],
         "module": "commonjs",        
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "sourceMap": true,
         "outDir": "dist",
         "strictNullChecks": true,

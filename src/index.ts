@@ -1,4 +1,4 @@
-const functions = require('firebase-functions');
+import * as functions from 'firebase-functions';
 const next = require('next');
 
 var dev = process.env.NODE_ENV !== 'production';

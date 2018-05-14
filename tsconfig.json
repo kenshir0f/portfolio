@@ -4,11 +4,15 @@
         "moduleResolution": "node",
         "jsx": "react",
         "target": "es6",
+<<<<<<< HEAD
         "lib": [
             "dom",
             "es7",
              "es2017"
         ],
+=======
+        "lib": ["dom", "es7", "es2017"],
+>>>>>>> test
         "module": "commonjs",        
         "noImplicitAny": true,
         "sourceMap": true,
@@ -22,6 +26,6 @@
         "src"
     ],
     "exclude": [
-		"node_modules", "functions"
+		"node_modules"
 	]
 }

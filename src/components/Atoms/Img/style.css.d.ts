@@ -1,1 +1,1 @@
-export const className: string;
+export const example: string;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as styles from './style.css';
 
-const Img = props => <img { ...props } />;
+const Img = (props: any) => <img { ...props } />;
 
 export default Img;

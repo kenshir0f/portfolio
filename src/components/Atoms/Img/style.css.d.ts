@@ -1,1 +1,1 @@
-export const className: string;
+

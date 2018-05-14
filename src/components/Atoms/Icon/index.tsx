@@ -1,6 +1,5 @@
 import * as React from 'react';
 import * as styles from './style.css';
-import { className } from '../Img/style.css';
 
 interface test {
   iconName: string,

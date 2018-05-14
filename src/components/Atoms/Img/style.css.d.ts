@@ -1,1 +1,1 @@
-
+export const example: string;

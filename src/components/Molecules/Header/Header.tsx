@@ -2,7 +2,7 @@ import * as React from 'react';
 import Img from '../../Atoms/Img/index';
 import { HeaderMenuIcon } from '../../Atoms/Icon/index'
 import Link from 'next/link';
-import { className } from '../../Atoms/Img/style.css';
+import * as style from '../../Atoms/Img/style.css';
 
 export const HeaderPresenter = (
   pathname: string,

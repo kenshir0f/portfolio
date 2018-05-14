@@ -20,17 +20,12 @@
     "create-public": "mkdir dist/public/static && cp src/static/* dist/public/static && echo \"not used\" > dist/public/__placeholder.html"
   },
   "devDependencies": {
-    "@types/algoliasearch": "^3.24.10",
-    "@types/cookie-parser": "^1.4.1",
-    "@types/jest": "^22.2.3",
-    "@types/lodash": "4.14.107",
     "@types/next": "^2.4.9",
     "@types/node": "^10.0.4",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
     "@types/request-promise": "^4.1.41",
     "@types/sinon": "^4.3.1",
-    "@types/stripe": "^5.0.10",
     "babel-plugin-transform-define": "^1.3.0",
     "concurrently": "^3.5.1",
     "firebase-mock": "^2.2.2",
@@ -38,15 +33,12 @@
     "jest": "^22.4.3",
     "shana": "^0.1.2",
     "sinon": "^4.5.0",
-    "ts-jest": "^22.4.4",
     "tslint": "^5.7.0",
     "typescript": "^2.8.3",
     "watch-run": "^1.2.5"
   },
   "dependencies": {
     "@google-cloud/storage": "1.6.0",
-    "@star__hoshi/tart": "0.4.1",
-    "algoliasearch": "3.27.0",
     "babel-runtime": "^6.26.0",
     "basic-auth-connect": "^1.0.0",
     "cookie-parser": "^1.4.3",
@@ -65,7 +57,6 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "split": "1.0.1",
-    "@zeit/next-css": "^0.2.0",
-    "stripe": "5.8.0"
+    "@zeit/next-css": "^0.2.0"
   }
 }

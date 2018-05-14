@@ -10,7 +10,7 @@
     "predeploy": "yarn build && cd dist && yarn",
     "serve": "firebase serve",
     "deploy": "firebase deploy",
-    "dev": "concurrently 'yarn watch-static' 'tsc --watch' 'tcm --watch src' 'next ./dist'",
+    "dev": "concurrently 'yarn watch-static' 'tsc --watch' 'tcm --watch src' 'cpx ./src/**/*.css ./dist --watch' 'next ./dist'",
     "build": "yarn clean && tsc && cp src/components/Atoms/Icon/style.css dist/components/Atoms/Icon && next build ./dist && cp package.json dist/package.json && yarn create-public",
     "__build": "yarn clean && tsc && cp src/components/Atoms/Icon/style.css dist/components/Atoms/Icon && next build ./dist",
     "start": "next start ./dist",

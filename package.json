@@ -11,7 +11,7 @@
     "serve": "firebase serve",
     "deploy": "firebase deploy",
     "dev": "concurrently 'yarn watch-static' 'tsc --watch' 'tcm --watch src' 'cpx ./src/**/*.css ./dist --watch' 'next ./dist'",
-    "build": "yarn clean && tsc && cpx ./src/**/*.css ./dist && next build ./dist && cp package.json dist/package.json && yarn create-public",
+    "build": "yarn clean && tcm ./src && tsc && cpx ./src/**/*.css ./dist && next build ./dist && cp package.json dist/package.json && yarn create-public",
     "start": "next start ./dist",
     "clean": "rm -rf dist/ && yarn install",
     "reset": "rm -rf node_modules dist && yarn",

@@ -1,6 +1,6 @@
-import * as React from 'react';
-import * as styles from './style.css';
+import * as React from 'react'
+import * as style from './style.css'
 
-const Img = (props: any) => <img { ...props } />;
+const Img = (props: any) => <img {...props} />
 
-export default Img;
+export default Img

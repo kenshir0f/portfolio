@@ -1,14 +1,14 @@
-import * as React from 'react';
-import * as styles from './style.css';
+import * as React from 'react'
+import * as styles from './style.css'
 
-interface ic_pr {
+interface PresenterObj {
   iconName: string,
   height: number,
   width: number,
   props: any
 }
 
-interface ic_co {
+interface ContainerObj {
   presenter: any,
   className: string,
   onClick: any,
@@ -19,29 +19,29 @@ export const IconPresenter = ({
   iconName,
   height = 20,
   width = 20,
-  ...props,
-}: ic_pr) => (
-  <img 
-    src={`/static/${ iconName }.svg`}
-    alt=""
-    height={ height }
-    width={ width }
-    { ...props }
-  />
-)
+  ...props
+}: PresenterObj) => (
+    <img
+      src={`/static/${iconName}.svg`}
+      alt=''
+      height={height}
+      width={width}
+      {...props}
+    />
+  )
 
 export const IconContainer = ({
   presenter,
   className = '',
   onClick,
-  ...props,
-}: ic_co) => {
-  className += ` ${ styles.example }`;
+  ...props
+}: ContainerObj) => {
+  className += ` ${styles.example}`
   return presenter({ onClick, className, ...props })
 }
 
 export const iconFactory = (iconName: string) => (props: any) => (
-  <IconContainer presenter={ (presenterProps: any) => <IconPresenter { ...presenterProps } />} { ...{ iconName, ...props} } />
-);
+  <IconContainer presenter={(presenterProps: any) => <IconPresenter {...presenterProps} />} {...{ iconName, ...props }} />
+)
 
-export const HeaderMenuIcon = iconFactory('header-menu');
+export const HeaderMenuIcon = iconFactory('header-menu')

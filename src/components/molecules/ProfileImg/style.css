@@ -1,0 +1,15 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .profileImg {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .profileImg {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}

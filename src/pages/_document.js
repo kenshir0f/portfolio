@@ -27,11 +27,11 @@ export default class MyDocument extends Document {
           <meta property='og:url' content={'https://kenshir0f.com'} />
           <meta property='og:image' content={'https://kenshir0f.com/static/images/ogp.jpg'} />
           <meta property='og:site_name' content={'ふじけん'} />
-          <meta name='twitter:card' content='summary' />
+          <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:site' content='@kenshir0f' />
           <meta name='twitter:url' content={'https://kenshir0f.com/static/images/ogp.jpg'} />
-          <meta name='twitter:title' content={'ふじけん'} />
-          <meta name='twitter:description' content={'ふじけんのポートフォリオ'} />
+          <meta name='twitter:title' content={'kenshir0f.com'} />
+          <meta name='twitter:description' content={'ふじけんのポートフォリオサイトだよ。'} />
           <meta name='twitter:image' content={'https://kenshir0f.com/static/images/ogp.jpg'} />
           <link rel='canonical' href={'https://kenshir0f.com'} />
           <link rel='shortcut icon' href={'/static/favicon/favicon-32x32.png'} />

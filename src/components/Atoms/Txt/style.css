@@ -1,10 +1,56 @@
+@import "../../utils/properties.css";
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .myName {
-    margin: 5px auto;
+    margin: 20px auto;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 300;
     text-align: center;
+    color: var(--color-black);
+  }
+  .wipCaption {
+    color: var(--color-black);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 20px;
+    line-height: 30px;
+  }
+  .copyright {
+    color: var(--color-gray-400);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 60px auto 40px;
   }
 }
 
-@media screen and (min-width: 481px) {}
+@media screen and (min-width: 481px) {
+  .myName {
+    margin: 20px auto;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-black);
+  }
+  .wipCaption {
+    color: var(--color-black);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 20px auto;
+    line-height: 30px;
+  }
+  .copyright {
+    color: var(--color-gray-400);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 60px auto 40px;
+  }
+}

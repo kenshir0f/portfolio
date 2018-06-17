@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Img from '../../Atoms/Img/index'
-import { HeaderMenuIcon } from '../../Atoms/Icon/index'
+import Img from '../../atoms/Img'
+import { HeaderMenuIcon } from '../../atoms/Icon'
 import Link from 'next/link'
 
 export const HeaderPresenter = (

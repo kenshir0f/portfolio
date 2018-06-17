@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { ProfileImg } from '../../molecules/ProfileImg'
 import SnsList from '../../organisms/SnsList'
-import { MyName } from '../../atoms/Txt'
+import { MyName, WipCaption, Copyright } from '../../atoms/Txt'
 
 const Portfolio = (props: any) =>
   <main>
@@ -9,6 +9,8 @@ const Portfolio = (props: any) =>
       <ProfileImg />
       <MyName />
       <SnsList />
+      <WipCaption />
+      <Copyright />
     </div>
   </main>
 

@@ -1,0 +1,63 @@
+:root {
+  /* ***** バリュー（値）層 ***** */
+  /* 色：色相名とカラーコードの紐づけ */
+  --color-black: #333A37;
+  --color-gray-700: #454D48;
+  --color-gray-600: #666A67;
+  --color-gray-500: #919896;
+  --color-gray-400: #B5B7B6;
+  --color-gray-300: #D8DAD9;
+  --color-gray-200: #EEEFEF;
+  --color-gray-100: #F6F6F6;
+  --color-gray-50: #FAFAFA;
+  --color-white: #FFFFFF;
+  --color-gray: #8c8c8c;
+  --color-light-green: #F5FFF8;
+  --color-green: #009D70;
+  --color-light-brown: #FAF9F8;
+  --color-brown: #7D6755;
+  --color-marron: #A9352C;
+  --color-pink: #FD507B;
+  --color-red: #FF3B30;
+  --color-facebook: #3B5998;
+  --color-instagram: #DA2E7F;
+  /* 文字：サイズ（媒体に最適化した文字サイズ） */
+  --font-size-zero: none;
+  --font-size-xs: 0.9rem;
+  /* 12px */
+  --font-size-s: 1.0rem;
+  /* 12px */
+  --font-size-p: 1.4rem;
+  /* 14px */
+  --font-size-h6: 1.6rem;
+  /* 16px */
+  --font-size-h5: 2.0rem;
+  /* 20px */
+  --font-size-h4: 2.4rem;
+  /* 24px */
+  --font-size-h3: 3.2rem;
+  /* 32px */
+  --font-size-h2: 4.0rem;
+  /* 40px */
+  --font-size-h1: 4.8rem;
+  /* 48px */
+  /* 文字：太さ（媒体に最適化した文字の太さ） */
+  --font-weight-default: 300;
+  --font-weight-bold: 600;
+}
+
+body {
+  margin: 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-indent: 0;
+  list-style: none;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-family: 'Avenir next', 'Yu Gothic Medium', "游ゴシック", YuGothic, "游ゴシック体", 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
+}

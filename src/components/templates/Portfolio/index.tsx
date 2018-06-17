@@ -1,8 +1,15 @@
 import * as React from 'react'
+import { ProfileImg } from '../../molecules/ProfileImg'
+import SnsList from '../../organisms/SnsList'
+import { MyName } from '../../atoms/Txt'
 
-const Portfolio = ({ children }: { children: any }) =>
+const Portfolio = (props: any) =>
   <main>
-    {children}
+    <div>
+      <ProfileImg />
+      <MyName />
+      <SnsList />
+    </div>
   </main>
 
 export default Portfolio

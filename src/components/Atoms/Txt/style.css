@@ -1,0 +1,10 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .myName {
+    margin: 5px auto;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) {}

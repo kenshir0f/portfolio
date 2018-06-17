@@ -1,8 +1,13 @@
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  .profileImg {
+  .profileImgContainer {
+    padding: 120px 0;
     width: 120px;
     height: 120px;
     margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .profileImg {
+    width: 100%;
   }
 }
 

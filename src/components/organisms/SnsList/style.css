@@ -1,0 +1,24 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .iconList {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .iconList img {
+    width: 44px;
+    height: 44px;
+    margin: 0 8px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .iconList {
+    display: flex;
+    justify-content: center;
+  }
+  .iconList img {
+    width: 44px;
+    height: 44px;
+    margin: 0 8px;
+  }
+}

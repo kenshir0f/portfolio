@@ -15,8 +15,8 @@
     "start": "next start ./dist",
     "clean": "rm -rf dist/ && yarn install",
     "reset": "rm -rf node_modules dist && yarn",
-    "watch-static": "watch-run -i -p 'src/static/**' 'rm -rf dist/static && mkdir dist/static && cp src/static/* dist/static'",
-    "create-public": "mkdir dist/public/static && cp src/static/* dist/public/static && echo \"not used\" > dist/public/__placeholder.html",
+    "watch-static": "watch-run -i -p 'src/static/**' 'rm -rf dist/static && mkdir dist/static && cpx \"src/static/**/*\" dist/static'",
+    "create-public": "mkdir -p dist/public && cp -r src/public/* dist/public && mkdir -p dist/public/static && cp -r src/static/* dist/public/static",
     "storybook": "start-storybook -s ./src/ -p 6006",
     "build-storybook": "build-storybook"
   },

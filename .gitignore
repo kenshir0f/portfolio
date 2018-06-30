@@ -9,3 +9,4 @@ functions/.runtimeconfig.json
 firebase-debug.log
 yarn-error.log
 coverage
+config

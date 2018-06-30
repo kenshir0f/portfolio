@@ -1,12 +1,31 @@
 import * as React from 'react'
 import * as style from './style.css'
 
-const Txt = (props: any) => <p className={props.className}>{props.children}</p>
-
+const Txt = (props: any) => (
+  <p className={props.className}>
+    {props.children}
+  </p>
+)
 export default Txt
 
 export const MyName = (props: any) => (
   <Txt className={style.myName}>kenshir0f</Txt>
+)
+
+export const HeadingTitle = (props: any) => (
+  <Txt className={style.myName} {...props} />
+)
+
+export const Caption = (props: any) => (
+  <Txt className={style.caption} {...props} />
+)
+
+export const NewsTitle = (props: any) => (
+  <Txt className={style.newsTitle} {...props} />
+)
+
+export const NewsContents = (props: any) => (
+  <Txt className={style.newsContents} {...props} />
 )
 
 export const WipCaption = (props: any) => (

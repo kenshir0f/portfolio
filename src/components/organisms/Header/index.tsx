@@ -2,26 +2,26 @@ import * as React from 'react'
 import Img from '../../atoms/Img'
 import { HeaderMenuIcon } from '../../atoms/Icon'
 import Link from 'next/link'
+import * as style from './style.css'
+import ProfileImg from '../../molecules/ProfileImg'
 
 export const HeaderPresenter = (
-  pathname: string,
-  ...props: any[]
-) => (
-    <header>
-      <p>
-        <Img src='/static/logo.png' />
-        <HeaderMenuIcon />
-      </p>
-      <Link href='/'>
-        <a className={pathname === '/' && 'is-active' || ''}>Homee</a>
-      </Link>{' '}
-      <Link href='/about'>
-        <a className={pathname === '/about' ? 'is-active' : ''}>About</a>
+  props: any
+) => {
+  return (
+    <header className={style.headerContainer}>
+      <Link href={'/'}>
+        <ProfileImg className={style.headerLogo} />
       </Link>
+      <HeaderLinkHome {...props} />
+      <HeaderLinkAdmins {...props} />
+      <HeaderLinkShops {...props} />
+      <HeaderLinkSkus {...props} />
     </header>
   )
+}
 
-interface Heco {
+interface HeaderObj {
   presenter: any,
   className: string,
   props: any
@@ -31,7 +31,7 @@ export const HeaderContainer = ({
   presenter,
   className = '',
   ...props
-}: Heco) => (
+}: HeaderObj) => (
     presenter({
       className, ...props
     })
@@ -42,3 +42,18 @@ const Header = (props: any) => (
 )
 
 export default Header
+
+export const HeaderLinkFactory = (linkName: string, hrefName: string) => (props: any) => {
+  let cssStyle = style.headerLink
+  if (props.url.pathname === hrefName) { cssStyle = style.headerLinkActive }
+  return (
+    <Link href={hrefName}>
+      <a className={cssStyle}>{linkName}</a>
+    </Link>
+  )
+}
+
+export const HeaderLinkHome = HeaderLinkFactory('Home', '/')
+export const HeaderLinkAdmins = HeaderLinkFactory('about', '/about')
+export const HeaderLinkShops = HeaderLinkFactory('news', '/news')
+export const HeaderLinkSkus = HeaderLinkFactory('contact', '/contact')

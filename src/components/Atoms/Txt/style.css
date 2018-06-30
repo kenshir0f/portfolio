@@ -25,6 +25,14 @@
     letter-spacing: 1px;
     margin: 60px auto 40px;
   }
+  .caption {
+    max-width: 800px;
+    font-size: 13px;
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 0 20px;
+    color: var(--color-gray-500);
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -53,4 +61,21 @@
     letter-spacing: 1px;
     margin: 60px auto 40px;
   }
+  .caption {
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 0 20px;
+    line-height: 23px;
+    color: var(--color-gray-500);
+  }
+}
+
+.newsTitle {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.newsContents {
+  font-size: 15px;
 }

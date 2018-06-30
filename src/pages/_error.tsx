@@ -1,37 +1,31 @@
 import * as React from 'react'
-import Header from '../components/organisms/Header'
 import { Error404 } from '../components/organisms/Error'
-import Portfolio from '../components/templates/Portfolio'
 import Head from '../components/utils/Head'
+import ErrorPage from '../components/templates/Error'
 
 interface Err {
   res: any,
   err: any
 }
 
-interface Props {
-  children: any
-}
-
-export default class Error extends React.Component<Props>  {
-  static getInitialProps({ res, err }: any) {
+export default class Error extends React.Component {
+  static getInitialProps({ res, err }: Err) {
     const statusCode = res ? res.statusCode : err ? err.statusCode : null
     return { statusCode }
   }
 
   render() {
     return (
-      <Portfolio >
+      <ErrorPage >
         <Head
-          title={'Komerco出品用アプリ Komerco Creator'}
-          description={'料理が楽しくなる作品をKomercoに出品してみませんか？'}
-          keyword={'KomercoCreator'}
-          image={'https://komer.co/static/images/ogp.jpg'}
-          url={'https://komer.co/creator'}
+          title={'404 / ふじけんのポートフォリオ'}
+          description={'404 / ふじけんのポートフォリオ'}
+          keyword={'kenshir0f'}
+          image={'https://kenshir0f.com/static/images/ogp.jpg'}
+          url={'https://kenshir0f.com/about'}
         />
-        <Header />
         <Error404 />
-      </Portfolio >
+      </ErrorPage >
     )
   }
 }

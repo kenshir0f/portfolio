@@ -8,6 +8,6 @@ export const Error404 = (props: any) => (
       アクセスしようとしたページは削除されたか、現在利用できない可能性があります。<br />
       お手数おかけしますが、ホームページから再度お探しください。
     </p>
-    <a href={'/'} className={style.errorBackToHomeButton}>kenshir0fトップへ</a>
+    <a href={'/'} className={style.errorBackToHomeButton}>トップページに戻る</a>
   </div>
 )

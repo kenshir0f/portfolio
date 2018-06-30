@@ -1,0 +1,23 @@
+import * as React from 'react'
+import * as ReactGA from 'react-ga'
+import ProfileImg from '../../molecules/ProfileImg'
+import SnsList from '../../organisms/SnsList'
+import { MyName, WipCaption, Copyright } from '../../atoms/Txt'
+import Header from '../../organisms/Header'
+
+ReactGA.initialize('UA-81128467-1')
+
+const Portfolio = (props: any) => {
+  return (
+    <main>
+      <Header {...props} />
+      <ProfileImg />
+      <MyName />
+      <SnsList />
+      <WipCaption />
+      <Copyright />
+    </main>
+  )
+}
+
+export default Portfolio

@@ -24,4 +24,28 @@
   }
 }
 
-@media screen and (min-width: 961px) {}
+@media screen and (min-width: 961px) {
+  .errorContainer {
+    margin: 0;
+  }
+  .errorHeading {
+    font-size: 20px;
+  }
+  .errorCaption {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .errorBackToHomeButton {
+    margin: 60px auto 0;
+    display: block;
+    text-decoration: none;
+    height: 44px;
+    max-width: 340px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 44px;
+    background-color: #2d3e6b;
+    color: #FFFFFF;
+  }
+}

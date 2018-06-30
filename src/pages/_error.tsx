@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Error404 } from '../components/organisms/Error'
 import Head from '../components/utils/Head'
 import ErrorPage from '../components/templates/Error'
 
@@ -24,7 +23,6 @@ export default class Error extends React.Component {
           image={'https://kenshir0f.com/static/images/ogp.jpg'}
           url={'https://kenshir0f.com/about'}
         />
-        <Error404 />
       </ErrorPage >
     )
   }

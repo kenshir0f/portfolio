@@ -1,6 +1,4 @@
 import * as React from 'react'
-import Img from '../../atoms/Img'
-import { HeaderMenuIcon } from '../../atoms/Icon'
 import Link from 'next/link'
 import * as style from './style.css'
 import ProfileImg from '../../molecules/ProfileImg'

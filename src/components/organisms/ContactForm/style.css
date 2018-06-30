@@ -28,6 +28,7 @@
   color: #2d3e6b;
   margin-bottom: 14px;
   padding-left: 10px;
+  -webkit-appearance: none;
   box-sizing: border-box;
 }
 
@@ -56,4 +57,5 @@
   margin-top: 20px;
   box-sizing: border-box;
   border: none;
+  -webkit-appearance: none;
 }

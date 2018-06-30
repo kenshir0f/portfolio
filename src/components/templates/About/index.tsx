@@ -1,11 +1,13 @@
 import * as React from 'react'
-import { MyName, HeadingTitle } from '../../atoms/Txt'
+import { HeadingTitle } from '../../atoms/Txt'
 import Header from '../../organisms/Header'
+import MainContainer from '../../organisms/MainContainer'
 
-const About = (props: any) =>
-  <main>
+const About = (props: any) => (
+  <MainContainer>
     <Header {...props} />
     <HeadingTitle>ただいま準備中です... 🙇</HeadingTitle>
-  </main>
+  </MainContainer>
+)
 
 export default About

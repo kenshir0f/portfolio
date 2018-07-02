@@ -3,7 +3,8 @@ import * as ReactGA from 'react-ga'
 import Img from '../../atoms/Img'
 import * as style from './style.css'
 
-ReactGA.initialize('UA-81128467-1')
+const googleAnalyticsID = process.env.REACT_GA_ID || ''
+ReactGA.initialize(googleAnalyticsID)
 
 const SnsList = (props: any) => (
   <div className={style.iconList}>

@@ -5,7 +5,8 @@ import SnsList from '../../organisms/SnsList'
 import { MyName, WipCaption, Copyright } from '../../atoms/Txt'
 import MainContainer from '../../organisms/MainContainer'
 
-ReactGA.initialize('UA-81128467-1')
+const googleAnalyticsID = process.env.REACT_GA_ID || ''
+ReactGA.initialize(googleAnalyticsID)
 
 const Portfolio = (props: any) => {
   return (

@@ -4,7 +4,8 @@ import * as style from './style.css'
 import { NewsTitle, NewsContents } from '../../atoms/Txt'
 import MainContainer from '../../organisms/MainContainer'
 
-ReactGA.initialize('UA-81128467-1')
+const googleAnalyticsID = process.env.REACT_GA_ID || ''
+ReactGA.initialize(googleAnalyticsID)
 
 const News = (props: any) => {
   return (

@@ -1,7 +1,11 @@
 import * as React from 'react'
+import * as ReactGA from 'react-ga'
 import Link from 'next/link'
 import * as style from './style.css'
 import ProfileImg from '../../molecules/ProfileImg'
+
+const googleAnalyticsID = process.env.REACT_GA_ID || ''
+ReactGA.initialize(googleAnalyticsID)
 
 export const HeaderPresenter = (
   props: any
@@ -46,7 +50,7 @@ export const HeaderLinkFactory = (linkName: string, hrefName: string) => (props:
   if (props.url.pathname === hrefName) { cssStyle = style.headerLinkActive }
   return (
     <Link href={hrefName}>
-      <a className={cssStyle}>{linkName}</a>
+      <a className={cssStyle} onClick={() => ReactGA.event({ category: 'portfolio', action: 'click', label: linkName })}>{linkName}</a>
     </Link>
   )
 }

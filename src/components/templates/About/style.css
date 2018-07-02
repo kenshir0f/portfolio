@@ -1,0 +1,14 @@
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .aboutContainer {
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .aboutContainer {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 20px;
+  }
+}

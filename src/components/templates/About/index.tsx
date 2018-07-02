@@ -1,12 +1,15 @@
 import * as React from 'react'
-import { HeadingTitle } from '../../atoms/Txt'
-import Header from '../../organisms/Header'
+import { NewsTitle, NewsContents } from '../../atoms/Txt'
 import MainContainer from '../../organisms/MainContainer'
+import * as style from './style.css'
 
 const About = (props: any) => (
-  <MainContainer>
-    <Header {...props} />
-    <HeadingTitle>ただいま準備中です... 🙇</HeadingTitle>
+  <MainContainer {...props}>
+    <div className={style.aboutContainer}>
+      <NewsTitle>プロフィール</NewsTitle>
+      <NewsContents>kenshir0f / ふじけん</NewsContents>
+      <NewsContents>デザイナー / サービス開発</NewsContents>
+    </div>
   </MainContainer>
 )
 

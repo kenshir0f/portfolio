@@ -22,5 +22,6 @@
   }
   .profileImg {
     width: 100%;
+    border-radius: 9999px;
   }
 }

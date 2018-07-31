@@ -1,6 +1,7 @@
 @media screen and (min-width: 0px) and (max-width: 600px) {
   .aboutContainer {
     margin: 0 auto;
+    width: calc(100% - 40px);
     padding: 20px;
   }
 }
@@ -11,4 +12,20 @@
     margin: 40px auto 0;
     padding: 20px;
   }
+}
+
+.aboutLink {
+  text-decoration: none;
+  color: #24a096;
+}
+
+.aboutSpeakerDeck {
+  position: absolute;
+  top: -9px;
+  width: 34px;
+  font-size: 0;
+}
+
+.aboutSpeakerDeckContainer {
+  position: relative;
 }

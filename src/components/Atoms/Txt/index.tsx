@@ -32,10 +32,17 @@ export const AboutHeading = (props: any) => (
   <Txt className={style.aboutHeading} {...props} />
 )
 
+export const AboutContent = (props: any) => (
+  <Txt className={style.aboutContent} {...props} />
+)
+
+export const AboutSpeaker = (props: any) => (
+  <Txt className={style.aboutSpeaker} {...props} />
+)
+
 export const WipCaption = (props: any) => (
   <Txt className={style.wipCaption}>
     こんにちは、ふじけんです。<br />
-    ただいま改装中でございます...<br />
     空いた時間に適当にコンテンツを追加していく予定なので、応援よろしくお願いします。
   </Txt>
 )

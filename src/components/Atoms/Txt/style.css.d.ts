@@ -3,5 +3,7 @@ export const wipCaption: string;
 export const copyright: string;
 export const caption: string;
 export const aboutHeading: string;
+export const aboutContent: string;
+export const aboutSpeaker: string;
 export const newsTitle: string;
 export const newsContents: string;

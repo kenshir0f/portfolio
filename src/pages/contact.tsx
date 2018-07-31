@@ -20,7 +20,7 @@ export default class Index extends React.Component<Props> {
           description={'Contact / kenshir0f.com'}
           keyword={'kenshir0f'}
           image={'https://kenshir0f.com/static/images/ogp.jpg'}
-          url={'https://kenshir0f.com'}
+          url={'https://kenshir0f.com/contact'}
         />
         <HeadingTitle>お問い合わせ</HeadingTitle>
         <ContactForm />

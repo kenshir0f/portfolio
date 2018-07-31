@@ -34,8 +34,22 @@
     color: var(--color-gray-500);
   }
   .aboutHeading {
-    font-size: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 24px 0 6px;
     font-weight: 600;
+  }
+  .aboutContent {
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+  .aboutSpeaker {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    font-weight: 300;
   }
 }
 
@@ -75,8 +89,21 @@
   }
   .aboutHeading {
     font-size: 16px;
-    margin: 20px 0 6px;
+    letter-spacing: 0.5px;
+    margin: 24px 0 6px;
     font-weight: 600;
+  }
+  .aboutContent {
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+  .aboutSpeaker {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    font-weight: 300;
   }
 }
 

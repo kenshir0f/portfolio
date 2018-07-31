@@ -1,23 +1,21 @@
 import * as React from 'react'
 import * as ReactGA from 'react-ga'
-import ProfileImg from '../../molecules/ProfileImg'
-import SnsList from '../../organisms/SnsList'
-import { MyName, WipCaption, Copyright } from '../../atoms/Txt'
-import MainContainer from '../../organisms/MainContainer'
+import Header from '../../organisms/Header'
 
 const googleAnalyticsID = process.env.REACT_GA_ID || ''
 ReactGA.initialize(googleAnalyticsID)
 
-const Portfolio = (props: any) => {
-  return (
-    <MainContainer {...props}>
-      <ProfileImg />
-      <MyName />
-      <SnsList />
-      <WipCaption />
-      <Copyright />
-    </MainContainer>
-  )
+interface Props {
+  children: any
 }
 
-export default Portfolio
+export default class Portfolio extends React.Component<Props> {
+  render() {
+    return (
+      <main>
+        <Header {...this.props}></Header>
+        {this.props.children}
+      </main>
+    )
+  }
+}

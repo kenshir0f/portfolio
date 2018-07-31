@@ -18,10 +18,10 @@ export default ({ title, description, keyword, image, url }: Props) => {
       <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon/favicon-32x32.png' />
       <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon/favicon-16x16.png' />
       <link rel='manifest' href='/static/favicon/site.webmanifest' />
-      <link rel='mask-icon' href='/static/favicon/safari-pinned-tab.svg' color='#37a070' />
+      <link rel='mask-icon' href='/static/favicon/safari-pinned-tab.svg' color='#F8D72A' />
       <meta name='apple-mobile-web-app-title' content='kenshir0f' />
       <meta name='application-name' content='kenshir0f' />
-      <meta name='msapplication-TileColor' content='#37a070' />
+      <meta name='msapplication-TileColor' content='#F8D72A' />
       <meta name='theme-color' content='#ffffff' />
 
       <title>{title}</title>

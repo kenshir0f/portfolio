@@ -33,6 +33,10 @@
     padding: 0 20px;
     color: var(--color-gray-500);
   }
+  .aboutHeading {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -68,6 +72,11 @@
     padding: 0 20px;
     line-height: 23px;
     color: var(--color-gray-500);
+  }
+  .aboutHeading {
+    font-size: 16px;
+    margin: 20px 0 6px;
+    font-weight: 600;
   }
 }
 

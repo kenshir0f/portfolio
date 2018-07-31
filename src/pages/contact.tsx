@@ -1,20 +1,31 @@
 import * as React from 'react'
-import Contact from '../components/templates/Contact'
-import ProfileImg from '../components/molecules/ProfileImg'
+import Portfolio from '../components/templates/Index'
 import Head from '../components/utils/Head'
+import { HeadingTitle, Caption } from '../components/atoms/Txt'
+import ContactForm from '../components/organisms/ContactForm'
 
-export default class ContactPage extends React.Component {
+interface Props {
+  url: {
+    pathname: string
+  },
+  children: any
+}
+
+export default class Index extends React.Component<Props> {
   render() {
     return (
-      <Contact {...this.props}>
+      <Portfolio {...this.props}>
         <Head
-          title={'kenshir0f.com'}
-          description={'ふじけんにフィードバック'}
+          title={'Contact / kenshir0f.com'}
+          description={'Contact / kenshir0f.com'}
           keyword={'kenshir0f'}
           image={'https://kenshir0f.com/static/images/ogp.jpg'}
-          url={'https://kenshir0f.com/contact'}
+          url={'https://kenshir0f.com'}
         />
-      </Contact>
+        <HeadingTitle>お問い合わせ</HeadingTitle>
+        <ContactForm />
+        <Caption>現在お仕事の以来は受け付けておりません。感想やフィードバックをいただけると幸いでございます。</Caption>
+      </Portfolio>
     )
   }
 }

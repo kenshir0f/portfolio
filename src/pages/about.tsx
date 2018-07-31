@@ -1,19 +1,28 @@
 import * as React from 'react'
-import About from '../components/templates/About'
+import Portfolio from '../components/templates/Index'
 import Head from '../components/utils/Head'
+import AboutContent from '../components/organisms/AboutContent'
 
-export default class Index extends React.Component {
+interface Props {
+  url: {
+    pathname: string
+  },
+  children: any
+}
+
+export default class Index extends React.Component<Props> {
   render() {
     return (
-      <About {...this.props}>
+      <Portfolio {...this.props}>
         <Head
-          title={'kenshir0f.com'}
-          description={'ふじけんニュース'}
+          title={'About / kenshir0f.com'}
+          description={'About / kenshir0f.com'}
           keyword={'kenshir0f'}
           image={'https://kenshir0f.com/static/images/ogp.jpg'}
           url={'https://kenshir0f.com/about'}
         />
-      </About>
+        <AboutContent />
+      </Portfolio>
     )
   }
 }

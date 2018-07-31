@@ -56,6 +56,6 @@ export const HeaderLinkFactory = (linkName: string, hrefName: string) => (props:
 }
 
 export const HeaderLinkHome = HeaderLinkFactory('Home', '/')
-export const HeaderLinkAdmins = HeaderLinkFactory('about', '/about')
-export const HeaderLinkShops = HeaderLinkFactory('news', '/news')
-export const HeaderLinkSkus = HeaderLinkFactory('contact', '/contact')
+export const HeaderLinkAdmins = HeaderLinkFactory('About', '/about')
+export const HeaderLinkShops = HeaderLinkFactory('News', '/news')
+export const HeaderLinkSkus = HeaderLinkFactory('Contact', '/contact')

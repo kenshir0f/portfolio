@@ -28,6 +28,10 @@ export const NewsContents = (props: any) => (
   <Txt className={style.newsContents} {...props} />
 )
 
+export const AboutHeading = (props: any) => (
+  <Txt className={style.aboutHeading} {...props} />
+)
+
 export const WipCaption = (props: any) => (
   <Txt className={style.wipCaption}>
     こんにちは、ふじけんです。<br />

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Head from '../components/utils/Head'
 import ErrorPage from '../components/templates/Error'
+import { Error404 } from '../components/organisms/Error'
 
 interface Err {
   res: any,
@@ -17,12 +18,13 @@ export default class Error extends React.Component {
     return (
       <ErrorPage >
         <Head
-          title={'404 / ふじけんのポートフォリオ'}
-          description={'404 / ふじけんのポートフォリオ'}
+          title={'404 / kenshir0f.com'}
+          description={'404 / kenshir0f.com'}
           keyword={'kenshir0f'}
           image={'https://kenshir0f.com/static/images/ogp.jpg'}
-          url={'https://kenshir0f.com/about'}
+          url={'https://kenshir0f.com'}
         />
+        <Error404 />
       </ErrorPage >
     )
   }

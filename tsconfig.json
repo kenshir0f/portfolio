@@ -1,11 +1,15 @@
 {
     "compileOnSave": false,
-    "compilerOptions": {        
+    "compilerOptions": {
         "moduleResolution": "node",
         "jsx": "react",
         "target": "es6",
-        "lib": ["dom", "es7", "es2017"],
-        "module": "commonjs",        
+        "lib": [
+            "dom",
+            "es7",
+            "es2017"
+        ],
+        "module": "commonjs",
         "noImplicitAny": true,
         "sourceMap": true,
         "outDir": "dist",
@@ -18,6 +22,7 @@
         "src"
     ],
     "exclude": [
-		"node_modules","**/*.stories.tsx"
-	]
+        "node_modules",
+        "**/*.stories.tsx"
+    ]
 }

@@ -1,20 +1,14 @@
 import * as React from 'react'
-import * as ReactGA from 'react-ga'
 import { Error404 } from '../../organisms/Error'
 
-const googleAnalyticsID = process.env.REACT_GA_ID || ''
-ReactGA.initialize(googleAnalyticsID)
+const Fragment = React.Fragment
 
-interface Props {
-  children: any
-}
-
-export default class ErrorPage extends React.Component<Props> {
+export default class ErrorContent extends React.Component<{}, {}> {
   render() {
     return (
-      <main>
-        {this.props.children}
-      </main>
+      <Fragment>
+        <Error404/>
+      </Fragment>
     )
   }
 }

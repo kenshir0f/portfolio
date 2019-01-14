@@ -1,34 +1,21 @@
 import * as React from 'react'
-import Portfolio from '../components/templates/Index'
+import App from '../components/templates/App'
 import Head from '../components/utils/Head'
-import ProfileImg from '../components/molecules/ProfileImg'
-import { MyName, WipCaption, Copyright } from '../components/atoms/Txt'
-import SnsList from '../components/organisms/SnsList'
+import IndexContent from '../components/templates/Index'
 
-interface Props {
-  url: {
-    pathname: string
-  },
-  children: any
-}
-
-export default class Index extends React.Component<Props> {
+export default class Index extends React.Component<any, {}> {
   render() {
     return (
-      <Portfolio {...this.props}>
+      <App { ...this.props }>
         <Head
-          title={'kenshir0f.com'}
-          description={'ふじけんのページ'}
-          keyword={'kenshir0f'}
-          image={'https://kenshir0f.com/static/images/ogp.jpg'}
-          url={'https://kenshir0f.com'}
+          title={ 'kenshir0f.com' }
+          description={ 'ふじけんのページ' }
+          keyword={ 'kenshir0f' }
+          image={ 'https://kenshir0f.com/static/images/ogp.jpg' }
+          url={ 'https://kenshir0f.com' }
         />
-        <ProfileImg />
-        <MyName />
-        <SnsList />
-        <WipCaption />
-        <Copyright />
-      </Portfolio>
+        <IndexContent />
+      </App>
     )
   }
 }

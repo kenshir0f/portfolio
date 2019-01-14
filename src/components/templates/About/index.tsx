@@ -3,7 +3,7 @@ import * as style from './style.css'
 import { AboutHeading, AboutContent, AboutSpeaker } from '../../atoms/Txt'
 import Img from '../../atoms/Img'
 
-const NewsContent = (props: any) => {
+const NewsContent = () => {
   return (
     <div className={style.aboutContainer}>
       <AboutHeading>Profile</AboutHeading>
@@ -21,7 +21,6 @@ const NewsContent = (props: any) => {
       <AboutHeading>Carrer</AboutHeading>
       <AboutSpeaker>Cookpad, Inc. | 2017 - Present</AboutSpeaker>
       <AboutSpeaker>Chikaku, Inc. | 2015 - 2018</AboutSpeaker>
-
     </div>
   )
 }

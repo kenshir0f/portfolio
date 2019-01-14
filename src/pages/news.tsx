@@ -1,19 +1,12 @@
 import * as React from 'react'
-import Portfolio from '../components/templates/Index'
 import Head from '../components/utils/Head'
-import NewsContent from '../components/organisms/NewsContent'
+import NewsContent from '../components/templates/News'
+import App from '../components/templates/App'
 
-interface Props {
-  url: {
-    pathname: string
-  },
-  children: any
-}
-
-export default class Index extends React.Component<Props> {
+export default class Index extends React.Component<any, {}> {
   render() {
     return (
-      <Portfolio {...this.props}>
+      <App {...this.props}>
         <Head
           title={'News / kenshir0f.com'}
           description={'News / kenshir0f.com'}
@@ -22,7 +15,7 @@ export default class Index extends React.Component<Props> {
           url={'https://kenshir0f.com/news'}
         />
         <NewsContent />
-      </Portfolio>
+      </App>
     )
   }
 }

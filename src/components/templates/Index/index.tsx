@@ -1,21 +1,21 @@
 import * as React from 'react'
-import * as ReactGA from 'react-ga'
 import Header from '../../organisms/Header'
+import ProfileImg from '../../molecules/ProfileImg'
+import { MyName, WipCaption, Copyright } from '../../atoms/Txt'
+import SnsList from '../../organisms/SnsList'
 
-const googleAnalyticsID = process.env.REACT_GA_ID || ''
-ReactGA.initialize(googleAnalyticsID)
+const Fragment = React.Fragment
 
-interface Props {
-  children: any
-}
-
-export default class Portfolio extends React.Component<Props> {
+export default class IndexContent extends React.Component<{}, {}> {
   render() {
     return (
-      <main>
-        <Header {...this.props}></Header>
-        {this.props.children}
-      </main>
+      <Fragment>
+        <ProfileImg />
+        <MyName />
+        <SnsList />
+        <WipCaption />
+        <Copyright />
+      </Fragment>
     )
   }
 }

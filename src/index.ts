@@ -1,17 +1,13 @@
-import * as functions from 'firebase-functions'
 import * as admin from 'firebase-admin'
+import * as ssr from './functions/ssr'
+import * as contact from './functions/contact'
 
-var serviceAccount = require('./adminsdk.json')
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
-})
+admin.initializeApp()
 
-const next = require('next')
+// ----------------------------------
+// ServerSideRendering for React on Next.js
+export const next = ssr.nextRequest
 
-var dev = process.env.NODE_ENV !== 'production'
-var app = next({ dev, conf: { distDir: '.next' } })
-var handle = app.getRequestHandler()
-
-exports.next = functions.https.onRequest((req, res) => {
-  return app.prepare().then(() => handle(req, res))
-})
+export const portfolio = {
+  contact: contact.onCalledContact
+}

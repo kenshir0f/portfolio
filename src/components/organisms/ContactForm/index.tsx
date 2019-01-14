@@ -1,7 +1,6 @@
 import * as React from 'react'
-import Img from '../../atoms/Img'
 import * as style from './style.css'
-import { firebase } from './../../../stores/firebaseInit'
+import { firebase } from './../../../functions/firebaseinit'
 
 export default class ContactForm extends React.Component<any, any> {
   constructor(props: any) {

@@ -1,10 +1,11 @@
 import * as functions from 'firebase-functions'
 import * as admin from 'firebase-admin'
 import { CallableContext } from 'firebase-functions/lib/providers/https'
+import * as Slack from 'fire-slack'
 
 interface ContactRequest {
-  text: string
   email: string
+  text: string
 }
 
 export const onCalledContact = functions.https.onCall(async (data, context) => {
@@ -21,11 +22,10 @@ const saveContact = async (data: ContactRequest, context: CallableContext) => {
 
   try {
     const db = admin.firestore().collection('contact').doc()
+    Slack.send({ webhook: { text: `${data.email} \n ${data.text}`} })
     return await db.set({
-      name: this.state.data.name,
-      email: this.state.data.email,
-      title: this.state.data.title,
-      content: this.state.data.content,
+      email: data.email,
+      text: data.text,
       timestamp: admin.firestore.FieldValue.serverTimestamp()
     })
   } catch (e) {

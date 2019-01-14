@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "kenshir0f-portfolio"
+    "default": "kenshir0f-portfolio",
+    "portfolio": "kenshir0f-web-portfolio"
   }
 }

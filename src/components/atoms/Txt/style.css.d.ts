@@ -7,3 +7,8 @@ export const aboutContent: string;
 export const aboutSpeaker: string;
 export const newsTitle: string;
 export const newsContents: string;
+export const newsContainer: string;
+export const newsDate: string;
+export const newsText: string;
+export const newsTextEnglish: string;
+export const newsLink: string;

@@ -115,3 +115,35 @@
 .newsContents {
   font-size: 15px;
 }
+
+.newsContainer {
+  margin: 0 auto;
+  padding: 16px 20px;
+  max-width: 480px;
+}
+
+.newsDate {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 3px;
+}
+
+.newsText {
+  font-size: 0.85em;
+  font-weight: 300;
+  color: var(--color-black);
+  margin-bottom: 3px;
+  letter-spacing: 0.1px;
+}
+
+.newsTextEnglish {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--color-gray-500);
+  margin-bottom: 6px;
+}
+.newsLink {
+  text-decoration: none;
+  color: #00ABB6;
+}

@@ -1,20 +1,20 @@
 import * as React from 'react'
 import Head from '../components/utils/Head'
-import NewsContent from '../components/templates/News'
 import App from '../components/templates/App'
+import WorksContent from '../components/templates/Works'
 
 export default class Index extends React.Component<any, {}> {
   render() {
     return (
       <App {...this.props}>
         <Head
-          title={'News / kenshir0f.com'}
-          description={'News / kenshir0f.com'}
+          title={'About / kenshir0f.com'}
+          description={'About / kenshir0f.com'}
           keyword={'kenshir0f'}
           image={'https://kenshir0f.com/static/images/ogp.png'}
-          url={'https://kenshir0f.com/news'}
+          url={'https://kenshir0f.com/about'}
         />
-        <NewsContent />
+        <WorksContent />
       </App>
     )
   }

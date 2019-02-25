@@ -11,7 +11,7 @@ export default class Index extends React.Component<any, {}> {
           title={ 'kenshir0f.com' }
           description={ 'ふじけんのページ' }
           keyword={ 'kenshir0f' }
-          image={ 'https://kenshir0f.com/static/images/ogp.jpg' }
+          image={ 'https://kenshir0f.com/static/images/ogp.png' }
           url={ 'https://kenshir0f.com' }
         />
         <IndexContent />

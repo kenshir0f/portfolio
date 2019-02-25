@@ -21,7 +21,7 @@ export default class Error extends React.Component<any, {}> {
           title={'404 / kenshir0f.com'}
           description={'404 / kenshir0f.com'}
           keyword={'kenshir0f'}
-          image={'https://kenshir0f.com/static/images/ogp.jpg'}
+          image={'https://kenshir0f.com/static/images/ogp.png'}
           url={'https://kenshir0f.com'}
         />
         <ErrorContent />

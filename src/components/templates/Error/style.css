@@ -1,4 +1,8 @@
 @media screen and (min-width: 0px) and (max-width: 960px) {
+  .container {
+    margin: 40px auto;
+    text-align: center;
+  }
   .errorContainer {
     margin: 0;
   }
@@ -25,6 +29,10 @@
 }
 
 @media screen and (min-width: 961px) {
+  .container {
+    margin: 40px auto;
+    text-align: center;
+  }
   .errorContainer {
     margin: 0;
   }
@@ -45,7 +53,7 @@
     text-align: center;
     font-size: 15px;
     line-height: 44px;
-    background-color: #2d3e6b;
+    background-color: #00ABB6;
     color: #FFFFFF;
   }
 }

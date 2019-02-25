@@ -1,0 +1,13 @@
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .workContainer {
+    margin: 20px;
+  }
+  
+}
+
+@media screen and (min-width: 961px) {
+  .workContainer {
+    max-width: 480px;
+    margin: 20px auto;
+  }
+}

@@ -11,14 +11,14 @@ export const HeaderPresenter = (
   props: any
 ) => {
   return (
-    <header className={style.headerContainer}>
-      <Link href={'/'}>
-        <ProfileImg className={style.headerLogo} />
+    <header className={ style.headerContainer }>
+      <Link href={ '/' }>
+        <ProfileImg className={ style.headerLogo } />
       </Link>
-      <HeaderLinkHome {...props} />
-      <HeaderLinkAdmins {...props} />
-      <HeaderLinkShops {...props} />
-      <HeaderLinkSkus {...props} />
+      <HeaderLinkHome { ...props } />
+      <HeaderLinkAbout { ...props } />
+      <HeaderLinkWorks { ...props } />
+      <HeaderLinkContact { ...props } />
     </header>
   )
 }
@@ -40,7 +40,7 @@ export const HeaderContainer = ({
   )
 
 const Header = (props: any) => (
-  <HeaderContainer presenter={(presenterProps: any) => <HeaderPresenter {...presenterProps} />} {...props} />
+  <HeaderContainer presenter={ (presenterProps: any) => <HeaderPresenter { ...presenterProps } /> } { ...props } />
 )
 
 export default Header
@@ -49,13 +49,13 @@ export const HeaderLinkFactory = (linkName: string, hrefName: string) => (props:
   let cssStyle = style.headerLink
   if (props.url.pathname === hrefName) { cssStyle = style.headerLinkActive }
   return (
-    <Link href={hrefName}>
-      <a className={cssStyle} onClick={() => ReactGA.event({ category: 'portfolio', action: 'click', label: linkName })}>{linkName}</a>
+    <Link href={ hrefName }>
+      <a className={ cssStyle } onClick={ () => ReactGA.event({ category: 'portfolio', action: 'click', label: linkName }) }>{ linkName }</a>
     </Link>
   )
 }
 
 export const HeaderLinkHome = HeaderLinkFactory('Home', '/')
-export const HeaderLinkAdmins = HeaderLinkFactory('About', '/about')
-export const HeaderLinkShops = HeaderLinkFactory('News', '/news')
-export const HeaderLinkSkus = HeaderLinkFactory('Contact', '/contact')
+export const HeaderLinkWorks = HeaderLinkFactory('Works', '/works')
+export const HeaderLinkAbout = HeaderLinkFactory('About', '/about')
+export const HeaderLinkContact = HeaderLinkFactory('Contact', '/contact')

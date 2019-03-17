@@ -40,6 +40,40 @@ export const AboutSpeaker = (props: any) => (
   <Txt className={ style.aboutSpeaker } { ...props } />
 )
 
+export const Content20190305 = () => (
+  <div className={ style.newsContainer }>
+    <p className={ style.newsDate }>2019.03.05</p>
+    <p className={ style.newsText }>
+      <a className={ style.newsLink } href={ 'https://internship.cookpad.com/2019/spring/' }>クックパッド春インターンシップ2019</a>
+      のサービス開発コースの講師を担当しました。資料は
+    <a className={ style.newsLink } href={ 'https://speakerdeck.com/kenshir0f/cookpad-spring-internship-2019-service-development-course' }>こちら</a>
+    </p>
+    <p className={ style.newsTextEnglish }>I gave a lecture on cookpad internship for service development cource.</p>
+  </div>
+)
+
+export const Content20190227 = () => (
+  <div className={ style.newsContainer }>
+    <p className={ style.newsDate }>2019.02.27</p>
+    <p className={ style.newsText }>Cookpad TechConf 2019に登壇しました。</p>
+    <iframe
+      src='https://www.youtube.com/embed/X9JjTfeEJ5A'
+      frameBorder='0'
+      style={ {
+        display: 'block',
+        maxWidth: '99%',
+        width: '560px',
+        height: '315px'
+      } }
+      allowFullScreen>
+    </iframe>
+    <p className={ style.newsText }>
+      資料は<a className={ style.newsLink } href={ 'https://speakerdeck.com/kenshir0f/cookpad-techconf-2019-komerco-service-dev' }>こちら</a>
+    </p>
+    <p className={ style.newsTextEnglish }>I presented my works at Cookpad TechConf 2019</p>
+  </div>
+)
+
 export const Content20190101 = () => (
   <div className={ style.newsContainer }>
     <p className={ style.newsDate }>2019.01.01</p>

@@ -40,6 +40,56 @@ export const AboutSpeaker = (props: any) => (
   <Txt className={ style.aboutSpeaker } { ...props } />
 )
 
+export const Content20190508 = () => (
+  <div className={ style.newsContainer }>
+    <p className={ style.newsDate }>2019.05.08</p>
+    <p className={ style.newsText }>HTML5プロフェッショナル認定試験Level1に合格しました。</p>
+    <p className={ style.newsTextEnglish }>I passed the HTML5 Professional Certification Level.1 Exam</p>
+    <iframe
+      className={ 'note-embed' }
+      src='https://note.mu/embed/notes/n92507505883e'
+      height={ 400 }
+      style={ {
+        border: 0,
+        display: 'block',
+        maxWidth: '99%',
+        height: '490px !important',
+        width: '480px',
+        padding: '0px',
+        margin: '10px 0px',
+        position: 'static',
+        visibility: 'visible'
+      } }
+    />
+  </div>
+)
+export const Content20190417 = () => (
+  <div className={ style.newsContainer }>
+    <p className={ style.newsDate }>2019.04.17</p>
+    <p className={ style.newsText }>登壇した内容が記事になりました。</p>
+    <p className={ style.newsTextEnglish }>The content on the stage became an article.</p>
+
+    <blockquote
+      className='twitter-tweet'
+      data-lang='ja'
+    >
+      <p
+        className={ style.newsText }
+        lang='ja'
+        dir='ltr'
+      >
+        クックパッドデザイナーが語る、新規サービス開発を加速させるためにやったこと––技術を使ってエンジニアをサポートする
+        <a href='https://twitter.com/kenshir0f?ref_src=twsrc%5Etfw'>@kenshir0f</a>
+        <a href='https://t.co/0HSdS2oSJr'>https://t.co/0HSdS2oSJr</a>
+      </p>
+      <a href='https://twitter.com/logmi_tech/status/1118430568553705472?ref_src=twsrc%5Etfw' className={ style.newsDate }>
+        2019年4月17日
+      </a>
+    </blockquote>
+    <script async src='https://platform.twitter.com/widgets.js' charSet='utf-8'></script>
+  </div>
+)
+
 export const Content20190305 = () => (
   <div className={ style.newsContainer }>
     <p className={ style.newsDate }>2019.03.05</p>
@@ -90,17 +140,19 @@ export const Content20181210 = () => (
     <iframe
       className={ 'note-embed' }
       src='https://note.mu/embed/notes/n9c8f8921b13c'
+      height={ 400 }
       style={ {
         border: 0,
         display: 'block',
         maxWidth: '99%',
+        height: '490px !important',
         width: '480px',
         padding: '0px',
         margin: '10px 0px',
         position: 'static',
         visibility: 'visible'
-      } } height='400'>
-    </iframe> <script async src='https://note.mu/scripts/embed.js'></script>
+      } }
+    />
   </div >
 )
 
@@ -112,17 +164,19 @@ export const Content20181206 = () => (
     <iframe
       className={ 'note-embed' }
       src='https://note.mu/embed/notes/n9bc5b6ec9fc2'
+      height={ 400 }
       style={ {
         border: 0,
         display: 'block',
         maxWidth: '99%',
+        height: '490px',
         width: '480px',
         padding: '0px',
         margin: '10px 0px',
         position: 'static',
         visibility: 'visible'
-      } } height='400'>
-    </iframe>
+      } }
+    />
   </div>
 )
 

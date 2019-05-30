@@ -6,65 +6,100 @@ interface WorksProps {
   imgsrc: string
   role: string
   output: string
-  desc: string
+  url?: string
 }
 
 const workDetails: WorksProps[] = [
   {
-    title: 'sweedy',
-    imgsrc: '',
-    role: 'UI Designer',
-    output: 'Logo, AppIcon, UI',
-    desc: ''
-  },
-  {
     title: 'stella',
-    imgsrc: '',
-    role: 'Producer',
-    output: 'Logo, AppIcon, UI',
-    desc: ''
-  },
-  {
-    title: 'komerco',
-    imgsrc: '',
-    role: 'Design Lead',
-    output: 'Logo, AppIcon, UI',
-    desc: ''
-  },
-  {
+    imgsrc: 'static/images/stella_title.jpg',
+    role: 'Developer / Designer',
+    output: 'React, mobx, Firebase, typescript, Next.js, Node.js, Markdown Editor, UI Design, Logo Design',
+    url: 'https://stella-app.jp'
+  }, {
+    //   title: 'voutique',
+    //   imgsrc: 'static/images/sweedy_title.jpg',
+    //   role: 'Designer',
+    //   output: 'Logo Design, Name Card'
+    // }, {
+    title: 'Komerco',
+    imgsrc: 'static/images/komerco_title.jpg',
+    role: 'Design Lead / Developer',
+    output: 'Service Design, iOS UI Design, Branding Design, Logo Design, Swift, Firebase, Typescript',
+    url: 'https://komer.co'
+  }, {
+    title: 'sweedy',
+    imgsrc: 'static/images/sweedy_title.jpg',
+    role: 'UI Designer',
+    output: 'iOS UI Design, Logo Design, AppIcon'
+  }, {
+    title: 'Overcookpad',
+    imgsrc: 'static/images/overcookpad_title.jpg',
+    role: 'Designer',
+    output: 'Character Design, Game Design, Logo Design',
+    url: 'https://cookpad.com'
+  }, {
+    //   title: 'Portfolio',
+    //   imgsrc: 'static/images/sweedy_title.jpg',
+    //   role: 'Designer',
+    //   output: 'UI Design, Firebase, React'
+    // }, {
     title: 'Mago-channel',
-    imgsrc: '',
-    role: 'UI Designer',
-    output: 'Logo, AppIcon, UI',
-    desc: ''
-  },
-  {
-    title: 'Silhouette User Interface',
-    imgsrc: '',
-    role: 'UI Designer',
-    output: 'Logo, AppIcon, UI',
-    desc: ''
+    imgsrc: 'static/images/mago-ch.jpg',
+    role: 'Designer',
+    output: 'UI Design, Instraction Manual Design, GoodDesign Award 2016 Best100',
+    url: 'https://mago-ch.com'
   }
 ]
 
 const WorkDetail = (props: { work: WorksProps }) => {
+  const { imgsrc, title, role, output, url } = props.work
+
+  if (url) {
+    return (
+      <a href={ url } className={ style.workLink } rel={ 'noreferrer noopener' } target={ '_blank' }>
+        <div className={ style.workDetailContainer }>
+          <img src={ imgsrc } alt={ title } />
+          <p className={ style.workTitle }>{ title }<span>as { role }</span></p>
+          <p className={ style.workDescription }>{ output }</p>
+        </div>
+      </a>
+    )
+  }
+
   return (
-    <div>
-      <p>{ props.work.title }</p>
-      <img src={ props.work.imgsrc } />
-      <p>{ props.work.role }</p>
-      <p>{ props.work.output }</p>
+    <div className={ style.workDetailContainer }>
+      <img src={ imgsrc } />
+      <p className={ style.workTitle }>{ title }<span>as { role }</span></p>
+      <p className={ style.workDescription }>{ output }</p>
     </div>
   )
+
 }
 
-const WorksContent = () => {
-  return (
-    <div className={ style.workContainer }>
-      <h1>works</h1>
-      <p>いま制作物をまとめておりますので少々お待ちを...🙏</p>
-      {/* { workDetails.map((work: WorksProps) => <WorkDetail work={ work } />) } */}
-    </div>
-  )
+export default class WorksContent extends React.Component<any, any> {
+
+  constructor(props: any) {
+    super(props)
+
+    this.state = {
+      isLoading: false
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <div className={ style.workContainer }>
+          <h1>works</h1>
+          {
+            workDetails.map((work: WorksProps) => (
+              <WorkDetail work={ work } />
+            ))
+          }
+        </div>
+      </div>
+    )
+  }
+
 }
-export default WorksContent

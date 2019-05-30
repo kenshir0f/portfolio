@@ -1,3 +1,49 @@
+.workContainer h1 {
+  color: var(--color-black);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.workLink {
+  text-decoration: none;
+}
+
+.workTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-black);
+  letter-spacing: 0.5px;
+}
+
+.workTitle span{
+  margin-left: 8px;
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.workDescription {
+  color: var(--color-gray-400);
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+.workDetailContainer {
+  margin-bottom: 40px;
+  transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  cursor: pointer;
+}
+
+.workDetailContainer:hover {
+  transform: scale(1.04, 1.04);
+}
+
+.workContainer img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: rgba(4, 12, 49, 0.15) 0px 10px 20px 2px;
+  margin-bottom: 8px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .workContainer {
     margin: 20px;
@@ -5,9 +51,10 @@
   
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 960px) {
   .workContainer {
-    max-width: 480px;
+    max-width: 720px;
+    box-sizing: border-box;
     margin: 20px auto;
   }
 }
